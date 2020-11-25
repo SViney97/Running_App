@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowRun">
+
+    <TextView
+        android:id="@+id/TVTime"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Time /Sec"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/TVTimeDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/TVTimeDisplay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TVTimeDisplay" />
+
+    <TextView
+        android:id="@+id/TVTimeDisplay"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/TVTime"
+        app:layout_constraintTop_toBottomOf="@+id/TVCaloriesDisplay" />
+
+    <TextView
+        android:id="@+id/TVCalories"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Calories"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/TVCaloriesDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/TVCaloriesDisplay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TVCaloriesDisplay"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TVCaloriesDisplay"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/TVCalories"
+        app:layout_constraintTop_toBottomOf="@+id/TVMeterRanDisplay" />
+
+    <TextView
+        android:id="@+id/TVMeterRan"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Meters Ran"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/TVMeterRanDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/TVMeterRanDisplay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TVMeterRanDisplay" />
+
+    <TextView
+        android:id="@+id/TVMeterRanDisplay"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/TVMeterRan"
+        app:layout_constraintTop_toBottomOf="@+id/TVDateDisplay" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:background="@drawable/custombutton"
+        android:onClick="DoBack"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <TextView
+        android:id="@+id/TVDate"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/TVDateDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/TVDateDisplay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TVDateDisplay" />
+
+    <TextView
+        android:id="@+id/TVDateDisplay"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="136dp"
+        android:text="00/00/00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/TVDate"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
